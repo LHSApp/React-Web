@@ -13,7 +13,7 @@ export default {
   getHomeList: async () => {
     return [
       {
-        slug: "orinals",
+        slug: "originals",
         title: "Originais do Site",
         items: await basicFetch(
           `/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`
