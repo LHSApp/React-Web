@@ -18,6 +18,11 @@ const loadAll = async () => {
 let list = await Tmdb.getHomeList();
 setMovieList(list);
 
+// Pegando Featured 
+
+let originals = list.filter(i=>i.slug === 'originals');
+let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length -1));
+
 
 }
 loadAll();
