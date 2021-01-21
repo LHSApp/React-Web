@@ -13,8 +13,6 @@ const basicFetch = async (endpoint) => {
 
 }
 
-
-
 export default {
 
   getHomeList: async () => {
