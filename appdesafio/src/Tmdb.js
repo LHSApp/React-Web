@@ -72,4 +72,9 @@ export default {
       },
     ];
   },
+getMovieInfo: async (movieId) => {
+
+
+}
+
 };
