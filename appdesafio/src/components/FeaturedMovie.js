@@ -23,6 +23,12 @@ export default ({ item }) => {
               {item.number_of_seasons !== 1 ? "s" : ""}
             </div>
             <div className="featured--description">{item.overview}</div>
+            <div className="featured--buttons">
+
+
+            </div>
+            <div className="featured--genres"><strong>Generos:</strong>...</div>
+            
           </div>
         </div>
       </div>
