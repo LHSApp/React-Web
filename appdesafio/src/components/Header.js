@@ -3,7 +3,7 @@ import "./Header.css";
 
 export default () => {
   return (
-    <header>
+    <header className="black">
       <div className="header--logo">
         <a href="/">
           <img
