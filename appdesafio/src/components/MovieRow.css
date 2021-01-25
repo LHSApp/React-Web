@@ -21,25 +21,52 @@ body {
   margin: 0px 0px 0px 30px;
 
 }
-.movieRow--listarea{
+
+.movieRow--listarea {
   overflow-x: hidden;
   padding-left: 30px;
 }
-.movieRow--list{
+
+.movieRow--list {
   width: 9999999px;
 }
-.movieRow--item{
+
+.movieRow--item {
   display: inline-block;
   width: 150px;
   cursor: pointer;
 }
 
-.movieRow--item img{
+.movieRow--item img {
   width: 100%;
   transform: scale(0.9);
   transition: all ease 0.2s;
 }
 
-.movieRow--item img:hover{
+.movieRow--item img:hover {
   transform: scale(1);
+}
+
+
+.movieRow--left,
+.movieRow--right {
+
+  position: absolute;
+  width: 40px;
+  height: 225px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  overflow: hidden;
+
+}
+
+.movieRow--left{
+  left: 0;
+}
+
+.movieRow--right{
+  right: 0;
 }

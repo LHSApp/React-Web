@@ -1,10 +1,23 @@
 import React from "react";
 import "./MovieRow.css";
+import ArrowBackIosSharpIcon from '@material-ui/icons/ArrowBackIosSharp';
+import ArrowForwardIosSharpIcon from '@material-ui/icons/ArrowForwardIosSharp';
 
 export default ({ title, items }) => {
   return (
     <div className="movieRow">
       <h2>{title}</h2>
+
+      <div className="movieRow--left" >
+
+      <ArrowBackIosSharpIcon style={{fontSize:50}}/>
+      </div>
+
+      <div className="movieRow--right" >
+
+<ArrowForwardIosSharpIcon style={{fontSize:50}}/>
+</div>
+
       <div className="movieRow--listarea">
         <div className="movieRow--list">
           {items.results.length > 0 &&
