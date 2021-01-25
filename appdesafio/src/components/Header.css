@@ -9,6 +9,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 background: transparent;
+transition: all ease 0.5s;
 }
 .header--logo{
   height:25px ;

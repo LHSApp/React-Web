@@ -59,6 +59,11 @@ return ()=>{
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+
+      <footer>
+       Feito com <span role="img" aria-label="coração">♥</span>
+        
+      </footer>
     </div>
   );
 };
