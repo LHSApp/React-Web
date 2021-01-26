@@ -4,16 +4,25 @@ import ArrowBackIosSharpIcon from '@material-ui/icons/ArrowBackIosSharp';
 import ArrowForwardIosSharpIcon from '@material-ui/icons/ArrowForwardIosSharp';
 
 export default ({ title, items }) => {
+const handleLeftArrow = () =>{
+
+
+}
+const handleRightArrow = () =>{
+
+  
+}
+
   return (
     <div className="movieRow">
       <h2>{title}</h2>
 
-      <div className="movieRow--left" >
+      <div className="movieRow--left"  onClick={handleLeftArrow}>
 
       <ArrowBackIosSharpIcon style={{fontSize:50}}/>
       </div>
 
-      <div className="movieRow--right" >
+      <div className="movieRow--right" onClick={handleRightArrow} >
 
 <ArrowForwardIosSharpIcon style={{fontSize:50}}/>
 </div>

@@ -58,8 +58,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000;
+  background-color:rgba(0, 0,0, 0.6);
   overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: all ease 0.5s;
 
 }
 
@@ -69,4 +72,9 @@ body {
 
 .movieRow--right{
   right: 0;
+}
+
+.movieRow:hover .movieRow--left,
+.movieRow:hover .movieRow--right{
+  opacity: 1;
 }
