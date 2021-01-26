@@ -77,3 +77,6 @@ body {
   opacity: 1;
 }
 
+.movieRow--list{
+  transition: all ease 0.5s ;
+}
