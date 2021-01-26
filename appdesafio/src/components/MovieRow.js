@@ -1,16 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import "./MovieRow.css";
 import ArrowBackIosSharpIcon from '@material-ui/icons/ArrowBackIosSharp';
 import ArrowForwardIosSharpIcon from '@material-ui/icons/ArrowForwardIosSharp';
 
 export default ({ title, items }) => {
-const handleLeftArrow = () =>{
 
+
+const [scrollX, setScrollX] = useState(-400);
+  
+  
+const handleLeftArrow = () =>{
+let x = scrollX + 150;
+if(x > 0){
+  x = 0;
+}
+setScrollX(x);
 
 }
 const handleRightArrow = () =>{
 
-  
+
 }
 
   return (
@@ -28,7 +37,7 @@ const handleRightArrow = () =>{
 </div>
 
       <div className="movieRow--listarea">
-        <div className="movieRow--list">
+        <div className="movieRow--list" style={{marginLeft: scrollX, width: items.results.length * 150}}>
           {items.results.length > 0 &&
             items.results.map((item, key) => (
               <div key={key} className="movieRow--item">
