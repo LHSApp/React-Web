@@ -18,8 +18,8 @@ setScrollX(x);
 
 }
 const handleRightArrow = () =>{
-
-
+  let x = scrollX - Math.round(window.innerWidth / 2);
+  setScrollX(x);
 }
 
   return (
