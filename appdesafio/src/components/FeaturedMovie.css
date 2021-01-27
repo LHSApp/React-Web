@@ -95,7 +95,9 @@
 
 
 @media (max-width:760px) {
-
+   .featured{
+     height: 90vh;
+   }
   .featured--name {
     font-size: 40px;
   }
@@ -109,17 +111,25 @@
     font-size: 14px;
     max-width: 100%;
     margin-right: 30px;
+    color: #fff;
 
 
   }
 
   .featured--watchbutton{
 
-    padding: 9px 16px;
+  
+    font-size: 15px;
   }
 
   .featured--mylistbutton{
-    padding: 12px 5px;
+    
+    font-size: 15px;
 
   }
+
+  .featured--genres{
+    font-size: 14px;
+  }
 }
+
